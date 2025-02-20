@@ -40,7 +40,7 @@ function App() {
           <Main />
         </Wrapper>
         <Wrapper>
-          <Heading1>모시는 글</Heading1>
+          <Heading1>Wedding Ceremony</Heading1>
           <Invitation />
         </Wrapper>
         <Wrapper ref={galleryRef}>
@@ -48,15 +48,15 @@ function App() {
           <GalleryWrap />
         </Wrapper>
         <Wrapper>
-          <Heading1>마음 전하실 곳</Heading1>
+          <Heading1>A place to convey your heart</Heading1>
           <Account />
         </Wrapper>
         <Wrapper>
-          <Heading1>오시는 길</Heading1>
+          <Heading1>Where?</Heading1>
           <Location />
         </Wrapper>
         <Wrapper>
-          <Heading1>신랑 신부에게</Heading1>
+          <Heading1>To the bride and groom</Heading1>
           <Guestbook />
         </Wrapper>
         <FloatingBar isVisible={isVisible} />

@@ -31,7 +31,7 @@ const HostInfo = ({ person }: { person: BrideAndGroom }) => {
         </>
       )}
       <RelationText>
-        <div>의</div>
+        {/* <div>의</div> */}
         <Relation>{person.relation}</Relation>
       </RelationText>
       <HighlightedName>{person.name}</HighlightedName>
@@ -48,7 +48,7 @@ const HighlightedName = styled.span`
 
 const HostContainer = styled.div`
   gap: 8px;
-  font-family: HSSanTokki20-Regular, serif;
+  // font-family: HSSanTokki20-Regular, serif;
 `;
 
 const HostDetails = styled.div`

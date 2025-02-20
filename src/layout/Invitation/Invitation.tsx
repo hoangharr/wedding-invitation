@@ -15,7 +15,7 @@ const Invitation = () => {
         target="_blank"
         href=""
         rel="noreferrer">
-        구글 캘린더 추가하기
+        Add Google Calendar
       </RoundButton>
     </InvitationWrapper>
   );
