@@ -7,7 +7,7 @@ const MapButtons = () => {
 
   return (
     <MapButtonWrapper>
-      <Button onClick={() => window.open(naverMap)}>Google Map</Button>
+      <Button onClick={() => window.open(naverMap)}>Google Map to Groom's Side</Button>
       {/* <Button onClick={() => window.open(kakaoMap)}>카카오맵</Button> */}
     </MapButtonWrapper>
   );
