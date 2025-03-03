@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 
 const Main = () => {
   const { greeting } = data;

@@ -8,7 +8,7 @@ interface LeafletMapProps {
   style?: React.CSSProperties;
 }
 
-const Map: React.FC<LeafletMapProps> = ({ center, zoom, style }) => {
+const Map: React.FC<LeafletMapProps> = ({ style }) => {
   const markerPosition1: [number, number] = [20.830055107170995, 106.69725040184687];
   const markerPosition2: [number, number] = [21.323209373795528, 105.38746251190094];
 
@@ -22,12 +22,12 @@ const Map: React.FC<LeafletMapProps> = ({ center, zoom, style }) => {
 
   return (
     <MapContainer
-      center={center}
-      zoom={zoom}
+      // center={center}
+      // zoom={zoom}
       style={{ height: '300px', width: '100%', marginTop: '20px', ...style }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       <Marker position={markerPosition1}>
         <Popup>Mai Hong Phuc Wedding Center</Popup>
