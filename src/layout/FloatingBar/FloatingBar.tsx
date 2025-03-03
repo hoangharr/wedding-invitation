@@ -70,6 +70,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
 export default FloatingBar;
 
 const Nav = styled.nav<{ isVisible: boolean }>`
+  z-index: 10000;
   min-width: 280px;
   position: fixed;
   bottom: 30px;

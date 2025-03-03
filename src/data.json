@@ -1,5 +1,7 @@
 {
   "greeting": {
+    "location": "https://maps.app.goo.gl/satecd94UvsEB673A",
+    "content": "Hoang-Loan Wedding",
     "title": "Minh Hoàng\n\uD83D\uDC8D \nKiều Loan",
     "message": "We are getting married.\n\nWe were warm and comfortable with each other.\nWe invite our precious people to this exciting moment of taking our first step as a married couple.",
     "host": {
@@ -39,24 +41,12 @@
       "host": "Groom's Side",
       "accountInfo": [
         {
-          "name": "Jang Saemo",
+          "name": "Do Minh Hoang",
           "relation": "Groom",
-          "bank": "Kakao Bank",
-          "account": "1234-56-789012",
+          "bank": "VPBank",
+          "account": "205891544",
           "kakaopayAccount": "",
           "tossAccount": ""
-        },
-        {
-          "name": "Jang Appa",
-          "relation": "Father",
-          "bank": "Nonghyup",
-          "account": "123-45-678901"
-        },
-        {
-          "name": "Lee Eomma",
-          "relation": "Mother",
-          "bank": "Nonghyup",
-          "account": "123-45-678901"
         }
       ]
     },
@@ -64,24 +54,12 @@
       "host": "Bride's Side",
       "accountInfo": [
         {
-          "name": "Hwang Nemo",
+          "name": "Ngo Thi Kieu Loan",
           "relation": "Bride",
-          "bank": "Toss Bank",
-          "account": "1234-5678-9012",
+          "bank": "VPBank",
+          "account": "231671625",
           "kakaopayAccount": "",
           "tossAccount": ""
-        },
-        {
-          "name": "Hwang Appa",
-          "relation": "Father",
-          "bank": "Nonghyup",
-          "account": "123-45-678901"
-        },
-        {
-          "name": "Lee Eomma",
-          "relation": "Mother",
-          "bank": "Nonghyup",
-          "account": "123-45-678901"
         }
       ]
     }
@@ -89,10 +67,12 @@
   "mapInfo": {
     "address1": "15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho",
     "address2": "1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong",
-    "naverMap": "https://maps.app.goo.gl/satecd94UvsEB673A",
-    "kakaoMap": "https://maps.app.goo.gl/satecd94UvsEB673A",
-    "lat": 20.830055107170995,
-    "lon": 106.69725040184687
+    "naverMap1": "https://maps.app.goo.gl/satecd94UvsEB673A",
+    "naverMap2": "https://maps.app.goo.gl/duCDjewn6vyC8feEA",
+    "lat1": 20.830055107170995,
+    "lon1": 106.69725040184687,
+    "lat2": 21.323209373795528,
+    "lon2": 105.38746251190094
   },
   "locationInfo": [
     {

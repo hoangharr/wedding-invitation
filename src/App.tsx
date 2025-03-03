@@ -55,7 +55,7 @@ function App() {
           <Heading1>Where?</Heading1>
           <Location />
         </Wrapper>
-        <Wrapper>
+        <Wrapper style={{paddingTop: "0 !important"}}>
           <Heading1>To the bride and groom</Heading1>
           <Guestbook />
         </Wrapper>

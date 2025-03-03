@@ -9,14 +9,11 @@ const Location = () => {
   const { mapInfo } = data;
   return (
     <LocationWrapper>
-      {/* <PointTitle>{mapInfo.address1}</PointTitle> */}
       <Caption textAlign={'center'}>{mapInfo.address1}</Caption>
-      {/* <PointTitle>{mapInfo.address2}</PointTitle> */}
-      <MapButtons />
+      <MapButtons role="groom" location="address1" />
       <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
-      <MapButtons />
+      <MapButtons role="bride" location="address2" />
       <Map center={[21.0285, 105.8542]} zoom={13} />
-      {/* <MapButtons /> */}
       <Address />
     </LocationWrapper>
   );
