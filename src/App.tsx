@@ -44,7 +44,7 @@ function App() {
           <Invitation />
         </Wrapper>
         <Wrapper ref={galleryRef}>
-          <Heading1>Gallery</Heading1>
+          <Heading1 style={{marginTop:"30px"}}>Gallery</Heading1>
           <GalleryWrap />
         </Wrapper>
         <Wrapper>
@@ -55,7 +55,7 @@ function App() {
           <Heading1>Where?</Heading1>
           <Location />
         </Wrapper>
-        <Wrapper style={{paddingTop: "0 !important"}}>
+        <Wrapper>
           <Heading1>To the bride and groom</Heading1>
           <Guestbook />
         </Wrapper>

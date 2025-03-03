@@ -19,5 +19,5 @@ const GuestBookWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 `;

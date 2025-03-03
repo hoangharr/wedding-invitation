@@ -47,11 +47,12 @@ const HostInfo = ({ person }: { person: BrideAndGroom }) => {
 // `;
 
 const HostContainer = styled.div`
-  gap: 8px;
+  // gap: 8px;
   // font-family: HSSanTokki20-Regular, serif;
 `;
 
 const HostDetails = styled.div`
+  display: none;
   padding: 0 55px;
   justify-content: center;
   white-space: nowrap;

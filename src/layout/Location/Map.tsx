@@ -21,7 +21,10 @@ const Map: React.FC<LeafletMapProps> = ({ center, zoom, style }) => {
   };
 
   return (
-    <MapContainer center={center} zoom={zoom} style={{ height: '400px', width: '100%', ...style }}>
+    <MapContainer
+      center={center}
+      zoom={zoom}
+      style={{ height: '300px', width: '100%', marginTop: '20px', ...style }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
