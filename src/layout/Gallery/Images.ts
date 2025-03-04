@@ -1,68 +1,76 @@
-const images = [ 
+const images = [
   {
     alt: 'image01',
-    source: "public/NHO01685.jpg",
+    source: '/NHO01685.jpg',
     width: 640,
-    height: 960
+    height: 960,
   },
   {
     alt: 'image02',
-    source: "public/NHO01756.jpg",
-
+    source: '/NHO01756.jpg',
     width: 640,
-    height: 960
+    height: 960,
   },
   {
     alt: 'image03',
-    source: "public/NHO01842.jpg",
+    source: '/NHO01842.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image04',
-    source: "public/NHO01907.jpg",
+    source: '/NHO01907.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image05',
-    source: "public/NHO02076.jpg",
+    source: '/NHO02076.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image06',
-    source: "public/NHO02186.jpg",
+    source: '/NHO02186.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image07',
-    source: "public/NHO02255.jpg",
+    source: '/NHO02255.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image08',
-    source: "public/NHO02292.jpg",
+    source: '/NHO02292.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image09',
-    source: "public/NHO02323.jpg",
+    source: '/NHO02323.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image10',
-    source: "public/NHO02348.jpg",
+    source: '/NHO02348.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image11',
-    source: "public/NHO02367.jpg",
+    source: '/NHO02367.jpg',
     width: 640,
-    height: 960
-  },{
+    height: 960,
+  },
+  {
     alt: 'image12',
-    source: "public/NHO02418.jpg",
+    source: '/NHO02418.jpg',
     width: 640,
-    height: 960
-  }
+    height: 960,
+  },
 ];
 
 export default images;
