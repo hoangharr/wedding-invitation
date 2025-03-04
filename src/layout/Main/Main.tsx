@@ -29,7 +29,7 @@ const Main = () => {
 
   return (
     <div style={{paddingTop:"30px"}}>
-      <MainImg src="src/assets/images/NHO01756.jpg" />
+      <MainImg src="/NHO01756.JPG" />
       <MainTitle>{greeting.title}</MainTitle>
       <SubTitle>{greeting.eventDetail}</SubTitle>
       <audio ref={audioRef} loop autoPlay playsInline>
@@ -80,6 +80,7 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 10px
 `;
 
 const IconButton = styled.button`
