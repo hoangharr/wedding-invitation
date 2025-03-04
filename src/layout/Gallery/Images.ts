@@ -1,19 +1,19 @@
 const images = [
   {
     alt: 'image01',
-    source: 'NHO01685.jpg',
+    source: 'public/NHO01685.jpg',
     width: 640,
     height: 960,
   },
   {
     alt: 'image02',
-    source: 'NHO01756.jpg',
+    source: '/NHO01756.jpg',
     width: 640,
     height: 960,
   },
   {
     alt: 'image03',
-    source: 'NHO01842.jpg',
+    source: '\NHO01842.jpg',
     width: 640,
     height: 960,
   },
