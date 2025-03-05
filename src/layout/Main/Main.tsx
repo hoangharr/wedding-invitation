@@ -5,7 +5,7 @@ import { useRef, useState } from 'react';
 const Main = () => {
   const { greeting } = data;
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false); // Set initial state to true since autoplay is enabled
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handleTogglePlayPause = () => {
     if (isPlaying) {
@@ -16,23 +16,12 @@ const Main = () => {
     setIsPlaying(!isPlaying);
   };
 
-  // useEffect(() => {
-  //   const playAudio = () => {
-  //     audioRef.current?.play().catch((error) => console.log('Autoplay blocked:', error));
-  //     document.removeEventListener('click', playAudio);
-  //   };
-
-  //   document.addEventListener('click', playAudio);
-
-  //   return () => document.removeEventListener('click', playAudio);
-  // }, []);
-
   return (
     <div style={{paddingTop:"30px"}}>
       <MainImg src="/NHO01756.JPG" />
       <MainTitle>{greeting.title}</MainTitle>
       <SubTitle>{greeting.eventDetail}</SubTitle>
-      <audio ref={audioRef} loop autoPlay playsInline>
+      <audio ref={audioRef} loop playsInline>
         <source src="wedding march.m4a" type="audio/mpeg" />
       </audio>
       <ButtonContainer>
