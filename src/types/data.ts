@@ -1,65 +1,76 @@
 export interface IData {
+  languages: string[];
+  greeting: {
+    en: IGreeting;
+    vi: IGreeting;
+  };
+  hostInfo: {
+    en: IHostInfo[];
+    vi: IHostInfo[];
+  };
+  locationInfo: {
+    en: ILocationInfo[];
+    vi: ILocationInfo[];
+  };
+  mapInfo: {
+    en: IMapInfo;
+    vi: IMapInfo;
+  };
+  comment: {
+    en: string;
+    vi: string;
+  };
+  heading: {
+    en: IHeading;
+    vi: IHeading;
+  };
   emojis: string[];
-  greeting: IGreeting;
-  hostInfo: IHostInfo;
-  locationInfo: ILocationInfo;
-  mapInfo: IMapInfo;
-  comment: { [language: string]: string };
-  heading: IHeading;
 }
 
 export interface IGreeting {
-  [language: string]: {
-    location: string;
-    content: string;
-    title: string;
-    message: string;
-    eventDetail: string;
-    eventDetail2: string;
-    host: {
-      groom: BrideAndGroom;
-      bride: BrideAndGroom;
+  location: string;
+  content: string;
+  title: string;
+  message: string;
+  eventDetail: string;
+  eventDetail2: string;
+  host: {
+    groom: {
+      name: string;
+      relation: string;
+      parents: Parent[];
+    };
+    bride: {
+      name: string;
+      relation: string;
+      parents: Parent[];
     };
   };
 }
 
-
-export interface BrideAndGroom {
-  name: string;
-  relation: string;
-  parents: Parent[];
-}
-
-export interface Parent {
-  relation: string;
-  name: string;
-}
+type Parent = { relation: string; name: string };
 
 export interface IHostInfo {
-  [language: string]: {
-    host: string;
-    accountInfo: { name: string; relation: string; bank: string; account: string }[];
-  }[];
+  host: string;
+  accountInfo: { name: string; relation: string; bank: string; account: string }[];
 }
 
 export interface IMapInfo {
-  [language: string]: {
-    address1: string;
-    address2: string;
-    address3: string;
-    address4: string;
-  };
+  address1: string;
+  address2: string;
+  address3: string;
+  address4: string;
 }
 
 export interface ILocationInfo {
-  [language: string]: { title: string; desc: string }[];
+  title: string;
+  desc: string;
 }
+
 export interface IHeading {
-  [language: string]: {
-    heading1: string;
-    heading2: string;
-    heading3: string;
-    heading4: string;
-    heading5: string;
-  };
+  heading1: string;
+  heading2: string;
+  heading3: string;
+  heading4: string;
+  heading5: string;
 }

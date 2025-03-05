@@ -2,14 +2,16 @@ import styled from '@emotion/styled';
 import data from 'data.json';
 import Button from '@/components/Button.tsx';
 import { useLanguage } from 'context/LanguageContext';
+import { IData } from '@/types/data';
 
 interface MapButtonsProps {
   role: 'bride' | 'groom';
+  location: 'address1' | 'address2';
 }
 
 const MapButtons = ({ role }: MapButtonsProps) => {
   const { language } = useLanguage();
-  const mapInfo = data.mapInfo[language];
+  const mapInfo = (data as IData).mapInfo[language as 'en' | 'vi'];
   const buttonText =
     language === 'en'
       ? `Google Map to ${role === 'groom' ? "Groom's Side" : "Bride's Side"}`

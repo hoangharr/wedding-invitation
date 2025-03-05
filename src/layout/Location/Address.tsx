@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import { Caption, PointTitle } from '@/components/Text.tsx';
-import { ILocationInfo } from '@/types/data.ts';
+import { ILocationInfo, IData } from '@/types/data.ts';
 import { useLanguage } from 'context/LanguageContext';
 
 const Address = () => {
   const { language } = useLanguage(); // Get selected language
 
-  const  locationInfo  = data.locationInfo[language];
+  const locationInfo = (data as IData).locationInfo[language as 'en' | 'vi'];
   return (
     <WayWrapper>
       {locationInfo?.map((item: ILocationInfo) => {

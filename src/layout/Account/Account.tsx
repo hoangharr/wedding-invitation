@@ -6,7 +6,7 @@ import { useLanguage } from 'context/LanguageContext';
 
 const Account = () => {
   const { language } = useLanguage(); // Get selected language
-  const hostInfo = data.hostInfo[language]; // Use selected language data
+  const hostInfo = data.hostInfo[language as 'en' | 'vi']; // Use selected language data
 
   return (
     <HostInfoWrapper>
@@ -20,10 +20,14 @@ const Account = () => {
                 relation={account.relation}
                 bank={account.bank}
                 account={account.account}
-                kakaopayAccount={account.kakaopayAccount}
-                tossAccount={account.tossAccount}
               />
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginTop: '10px',
+                }}>
                 <img
                   src={account.relation == 'Bride' ? '/bride qr.png' : '/groom qr.png'}
                   alt="qr"

@@ -3,11 +3,12 @@ import data from 'data.json';
 import RoundButton from '@/components/RoundButton.tsx';
 import { Caption, Paragraph } from '@/components/Text.tsx';
 import { useLanguage } from 'context/LanguageContext';
+import { IData } from '@/types/data';
 
 const Invitation = () => {
   const { language } = useLanguage(); // Get selected language
 
-  const greeting  = data.greeting[language];
+  const greeting  = (data as IData).greeting[language as 'en'|'vi'];
   const eventTitle = encodeURIComponent(greeting.content);
   const eventContent= encodeURIComponent("Đi đám cưới Hoàng và Loan");
   const eventLocation = encodeURIComponent(greeting.location);

@@ -2,10 +2,11 @@ import styled from '@emotion/styled';
 import data from 'data.json';
 import { useRef, useState } from 'react';
 import { useLanguage } from 'context/LanguageContext';
+import { IData } from '@/types/data.ts';
 
 const Main = () => {
   const {language} = useLanguage()
-  const greeting = data.greeting[language];
+  const greeting = data.greeting[language as 'en' | 'vi'];
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
