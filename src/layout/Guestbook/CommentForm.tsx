@@ -2,10 +2,12 @@ import { useState } from 'react';
 import styled from '@emotion/styled';
 import { push, ref, serverTimestamp } from 'firebase/database';
 import { realtimeDb } from '../../firebase.ts';
+import { useLanguage } from 'context/LanguageContext.tsx';
 
 const guestbookRef = ref(realtimeDb, 'guestbook');
 
 const CommentForm = () => {
+  const { language } = useLanguage();
   const [name, setName] = useState<string>('');
   const [message, setMessage] = useState<string>('');
 
@@ -21,7 +23,7 @@ const CommentForm = () => {
         date: new Date().toLocaleString(),
       };
       void push(guestbookRef, guestbookMessage);
-      
+
       alert('Your message has been sent. 💌');
       setName('');
       setMessage('');
@@ -31,17 +33,17 @@ const CommentForm = () => {
   return (
     <FormWrapper onSubmit={handleSubmit}>
       <NameInput
-        placeholder="Name"
+        placeholder={language === 'en' ? 'Name' : 'Tên'}
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <MessageInput
-        placeholder="Message"
+        placeholder={language === 'en' ? 'Message' : 'Nội dung'}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <SubmitButton type="submit">Send</SubmitButton>
+      <SubmitButton type="submit">{language === 'en' ? 'Send' : 'Gửi'}</SubmitButton>
     </FormWrapper>
   );
 };
@@ -63,7 +65,7 @@ const NameInput = styled.input`
   line-height: 1;
   outline: none;
   border: 1px solid #ccc;
-  font-family: inherit;
+  // font-family: Poppins, Inter;
   font-weight: 300;
 `;
 
@@ -78,7 +80,7 @@ const MessageInput = styled.textarea`
   outline: none;
   border: 1px solid #ccc;
   resize: none;
-  font-family: inherit;
+  // font-family: Poppins, Inter;
   font-weight: 300;
 `;
 
@@ -90,7 +92,7 @@ const SubmitButton = styled.button`
   line-height: 1.5;
   border: 1px solid lightgray;
   background-color: white;
-  font-family: inherit;
+  // font-family: Poppins, Inter;
   font-weight: inherit;
   color: inherit;
 `;

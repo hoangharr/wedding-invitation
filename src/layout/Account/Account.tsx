@@ -2,30 +2,38 @@ import styled from '@emotion/styled';
 import data from 'data.json';
 import AccountWrap from './AccountWrap.tsx';
 import Accordion from '@/components/Accordion.tsx';
+import { useLanguage } from 'context/LanguageContext';
 
 const Account = () => {
-  const { hostInfo } = data;
+  const { language } = useLanguage(); // Get selected language
+  const hostInfo = data.hostInfo[language]; // Use selected language data
+
   return (
     <HostInfoWrapper>
-      {hostInfo.map((host) => {
-        return (
-          <Accordion title={host.host} key={host.host}>
-            {host.accountInfo.map((account) => {
-              return (
-                <AccountWrap
-                  key={account.name}
-                  name={account.name}
-                  relation={account.relation}
-                  bank={account.bank}
-                  account={account.account}
-                  kakaopayAccount={account.kakaopayAccount}
-                  tossAccount={account.tossAccount}
+      {hostInfo.map((host) => (
+        <Accordion title={host.host} key={host.host}>
+          {host.accountInfo.map((account) => (
+            <>
+              <AccountWrap
+                key={account.name}
+                name={account.name}
+                relation={account.relation}
+                bank={account.bank}
+                account={account.account}
+                kakaopayAccount={account.kakaopayAccount}
+                tossAccount={account.tossAccount}
+              />
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px' }}>
+                <img
+                  src={account.relation == 'Bride' ? '/bride qr.png' : '/groom qr.png'}
+                  alt="qr"
                 />
-              );
-            })}
-          </Accordion>
-        );
-      })}
+              </div>
+            </>
+          ))}
+          <div></div>
+        </Accordion>
+      ))}
     </HostInfoWrapper>
   );
 };

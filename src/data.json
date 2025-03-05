@@ -1,90 +1,189 @@
 {
+  "languages": ["en", "vi"],
   "greeting": {
-    "location": "https://maps.app.goo.gl/satecd94UvsEB673A",
-    "content": "Hoang-Loan Wedding",
-    "title": "Minh Hoàng\n\uD83D\uDC8D \nKiều Loan",
-    "message": "We are getting married.\n\nWe were warm and comfortable with each other.\nWe invite our precious people to this exciting moment of taking our first step as a married couple.",
-    "host": {
-      "groom": {
-        "name": "Minh Hoàng",
-        "relation": "Groom",
-        "parents": [
+    "en": {
+      "location": "https://maps.app.goo.gl/satecd94UvsEB673A",
+      "content": "Hoang-Loan Wedding",
+      "title": "Minh Hoàng\n💍\nKiều Loan",
+      "message": "We are getting married! 🎉🎉🎉\nWith love, laughter, and happiness, we're starting our journey together.\nWe can't wait to celebrate this special moment with you!",
+      "eventDetail": "17:00 15/03/2025\nMai Hong Phuc Wedding Center\n1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong",
+      "eventDetail2": "9:00 15/03/2025\nBride's House\n15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho",
+      "host": {
+        "groom": {
+          "name": "Minh Hoàng",
+          "relation": "Groom",
+          "parents": [
+            {
+              "relation": "Father",
+              "name": "Đài"
+            },
+            {
+              "relation": "Mother",
+              "name": "Oanh"
+            }
+          ]
+        },
+        "bride": {
+          "name": "Kiều Loan",
+          "relation": "Bride",
+          "parents": [
+            {
+              "relation": "Father",
+              "name": "Hòa"
+            },
+            {
+              "relation": "Mother",
+              "name": "Hoài"
+            }
+          ]
+        }
+      }
+    },
+    "vi": {
+      "location": "https://maps.app.goo.gl/satecd94UvsEB673A",
+      "content": "Lễ cưới Hoàng - Loan",
+      "title": "Minh Hoàng\n💍\nKiều Loan",
+      "message": "Tụi mình sắp về chung một nhà rồi nè! 🎉🎉🎉\nHành trình từ 'crush' sang 'cưới' chính thức bắt đầu! 🚀\nMong được cùng bạn tạo nên những kỷ niệm đáng nhớ trong ngày đặc biệt này!",
+      "eventDetail": "17:00 ngày 15/03/2025\nTrung tâm tiệc cưới Mai Hồng Phúc\n1B Thiên Lôi, Đằng Giang, Ngô Quyền, Hải Phòng",
+      "eventDetail2": "9:00 ngày 15/03/2025\nNhà cô dâu\nNgõ 15 Phan Chu Trinh, Gia Cẩm, Việt Trì, Phú Thọ",
+      "host": {
+        "groom": {
+          "name": "Minh Hoàng",
+          "relation": "Chú rể",
+          "parents": [
+            {
+              "relation": "Bố",
+              "name": "Đài"
+            },
+            {
+              "relation": "Mẹ",
+              "name": "Oanh"
+            }
+          ]
+        },
+        "bride": {
+          "name": "Kiều Loan",
+          "relation": "Cô dâu",
+          "parents": [
+            {
+              "relation": "Bố",
+              "name": "Hòa"
+            },
+            {
+              "relation": "Mẹ",
+              "name": "Hoài"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "hostInfo": {
+    "en": [
+      {
+        "host": "Groom's Side",
+        "accountInfo": [
           {
-            "relation": "Father",
-            "name": "Đài"
-          },
-          {
-            "relation": "Mother",
-            "name": "Oanh"
+            "name": "Do Minh Hoang",
+            "relation": "Groom",
+            "bank": "VPBank",
+            "account": "205891544"
           }
         ]
       },
-      "bride": {
-        "name": "Kiều Loan",
-        "relation": "Bride",
-        "parents": [
+      {
+        "host": "Bride's Side",
+        "accountInfo": [
           {
-            "relation": "Father",
-            "name": "Hòa"
-          },
-          {
-            "relation": "Mother",
-            "name": "Hoài"
+            "name": "Ngo Thi Kieu Loan",
+            "relation": "Bride",
+            "bank": "VPBank",
+            "account": "231671625"
           }
         ]
       }
-    },
-    "eventDetail": "17:00 15/03/2025\nMai Hong Phuc Wedding Center",
-    "eventDetail2": "9h00 15/03/2025\n15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho"
+    ],
+    "vi": [
+      {
+        "host": "Nhà trai",
+        "accountInfo": [
+          {
+            "name": "Đỗ Minh Hoàng",
+            "relation": "Chú rể",
+            "bank": "VPBank",
+            "account": "205891544"
+          }
+        ]
+      },
+      {
+        "host": "Nhà gái",
+        "accountInfo": [
+          {
+            "name": "Ngô Thị Kiều Loan",
+            "relation": "Cô dâu",
+            "bank": "VPBank",
+            "account": "231671625"
+          }
+        ]
+      }
+    ]
   },
-  "hostInfo": [
-    {
-      "host": "Groom's Side",
-      "accountInfo": [
-        {
-          "name": "Do Minh Hoang",
-          "relation": "Groom",
-          "bank": "VPBank",
-          "account": "205891544",
-          "kakaopayAccount": "",
-          "tossAccount": ""
-        }
-      ]
-    },
-    {
-      "host": "Bride's Side",
-      "accountInfo": [
-        {
-          "name": "Ngo Thi Kieu Loan",
-          "relation": "Bride",
-          "bank": "VPBank",
-          "account": "231671625",
-          "kakaopayAccount": "",
-          "tossAccount": ""
-        }
-      ]
-    }
-  ],
   "mapInfo": {
-    "address1": "1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong",
-    "address2": "15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho",
-    "naverMap1": "https://maps.app.goo.gl/satecd94UvsEB673A",
-    "naverMap2": "https://maps.app.goo.gl/zLNuMTKsxPH2RcEt7",
-    "lat1": 20.830055107170995,
-    "lon1": 106.69725040184687,
-    "lat2": 21.323209373795528,
-    "lon2": 105.38746251190094
-  },
-  "locationInfo": [
-    {
-      "title": "\uD83D\uDCCD Groom's Side:",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB Mai Hong Phuc Wedding Center \n\uD83D\uDC49\uD83C\uDFFB 1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong "
+    "en": {
+      "address1": "https://maps.app.goo.gl/satecd94UvsEB673A",
+      "address2": "https://maps.app.goo.gl/zLNuMTKsxPH2RcEt7",
+      "address3": "1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong",
+      "address4": "15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho"
     },
-    {
-      "title": "\uD83D\uDCCD Bride's Side: ",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB Bride's House\n\uD83D\uDC49\uD83C\uDFFB 15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho"
+    "vi": {
+      "address1": "https://maps.app.goo.gl/satecd94UvsEB673A",
+      "address2": "https://maps.app.goo.gl/zLNuMTKsxPH2RcEt7",
+      "address3": "1B Thiên Lôi, Đằng Giang, Ngô Quyền, Hải Phòng",
+      "address4": "Ngõ 15 Phan Chu Trinh, Gia Cẩm, Việt Trì, Phú Thọ"
     }
-  ],
+  },
+  "locationInfo": {
+    "en": [
+      {
+        "title": "📍 Groom's Side:",
+        "desc": "👉 Mai Hong Phuc Wedding Center\n👉 1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong"
+      },
+      {
+        "title": "📍 Bride's Side:",
+        "desc": "👉 Bride's House\n👉 15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho"
+      }
+    ],
+    "vi": [
+      {
+        "title": "📍 Nhà trai:",
+        "desc": "👉 Trung tâm tiệc cưới Mai Hồng Phúc\n👉 1B Thiên Lôi, Đằng Giang, Ngô Quyền, Hải Phòng"
+      },
+      {
+        "title": "📍 Nhà gái:",
+        "desc": "👉 Nhà cô dâu\n👉 Ngõ 15 Phan Chu Trinh, Gia Cẩm, Việt Trì, Phú Thọ"
+      }
+    ]
+  },
+  "comment": {
+    "en": "Please leave your message here.",
+    "vi": "Hãy để lại lời nhắn của bạn tại đây.\n Chắc chắn tôi sẽ đọc!"
+  },
+  "heading": {
+    "en": {
+      "heading1": "Wedding Ceremony",
+      "heading2": "Our Gallery",
+      "heading3": "A place to convey your heart",
+      "heading4": "Where?",
+      "heading5": "To the bride and groom:"
+    },
+    "vi": {
+      "heading1": "Lễ thành hôn",
+      "heading2": "Ảnh cưới chúng mình",
+      "heading3": "Bạn ở xa? Đã có QR!",
+      "heading4": "Ăn cưới ở đâu nhỉ?",
+      "heading5": "Đôi lời chúc mừng gửi cô dâu chú rể:"
+    }
+  },
   "emojis": [
     "❤️",
     "💛",

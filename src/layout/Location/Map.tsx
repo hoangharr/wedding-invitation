@@ -15,7 +15,18 @@ const Map: React.FC<LeafletMapProps> = ({ style }) => {
   const MapBounds = () => {
     const map = useMap();
     useEffect(() => {
-      map.fitBounds([markerPosition1, markerPosition2]);
+      const paddingFactor = 0.05; // Adjust this factor to increase/decrease padding
+
+    // Expand bounds slightly by adding/subtracting a small value
+    const minLat = Math.min(markerPosition1[0], markerPosition2[0]) - paddingFactor;
+    const maxLat = Math.max(markerPosition1[0], markerPosition2[0]) + paddingFactor;
+    const minLng = Math.min(markerPosition1[1], markerPosition2[1]) - paddingFactor;
+    const maxLng = Math.max(markerPosition1[1], markerPosition2[1]) + paddingFactor;
+
+    map.fitBounds([
+      [minLat, minLng],
+      [maxLat, maxLng]
+    ], { padding: [50, 50] }); // Add pixel padding
     }, [map]);
     return null;
   };

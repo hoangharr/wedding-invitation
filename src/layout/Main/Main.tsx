@@ -1,9 +1,11 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import { useRef, useState } from 'react';
+import { useLanguage } from 'context/LanguageContext';
 
 const Main = () => {
-  const { greeting } = data;
+  const {language} = useLanguage()
+  const greeting = data.greeting[language];
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -20,7 +22,6 @@ const Main = () => {
     <div style={{paddingTop:"30px"}}>
       <MainImg src="/NHO01756.JPG" />
       <MainTitle>{greeting.title}</MainTitle>
-      <SubTitle>{greeting.eventDetail}</SubTitle>
       <audio ref={audioRef} loop playsInline>
         <source src="wedding march.m4a" type="audio/mpeg" />
       </audio>
@@ -51,17 +52,10 @@ const MainImg = styled.img`
 `;
 
 const MainTitle = styled.p`
-  font-family: Poppins, serif;
+  font-family: Poppins, Inter;
   font-size: 2rem;
   color: #2f2120;
   line-height: 120%;
-  white-space: pre-line;
-`;
-
-const SubTitle = styled.p`
-  font-size: 1.1rem;
-  color: #2f2120;
-  line-height: 140%;
   white-space: pre-line;
 `;
 

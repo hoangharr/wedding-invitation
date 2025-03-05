@@ -9,8 +9,12 @@ import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
+import { useLanguage } from 'context/LanguageContext';
+import data from 'data.json';
 
 function App() {
+  const { language } = useLanguage();
+  const heading = data.heading[language]
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef(null);
 
@@ -40,23 +44,23 @@ function App() {
           <Main />
         </Wrapper>
         <Wrapper>
-          <Heading1>Wedding Ceremony</Heading1>
+          <Heading1>{heading.heading1}</Heading1>
           <Invitation />
         </Wrapper>
         <Wrapper ref={galleryRef}>
-          <Heading1 style={{marginTop:"30px"}}>Gallery</Heading1>
+          <Heading1 style={{marginTop:"30px"}}>{heading.heading2}</Heading1>
           <GalleryWrap />
         </Wrapper>
         <Wrapper>
-          <Heading1>A place to convey your heart</Heading1>
+          <Heading1>{heading.heading3}</Heading1>
           <Account />
         </Wrapper>
         <Wrapper>
-          <Heading1>Where?</Heading1>
+          <Heading1>{heading.heading4}</Heading1>
           <Location />
         </Wrapper>
         <Wrapper>
-          <Heading1>To the bride and groom</Heading1>
+          <Heading1>{heading.heading5}</Heading1>
           <Guestbook />
         </Wrapper>
         <FloatingBar isVisible={isVisible} />

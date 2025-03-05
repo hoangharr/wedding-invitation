@@ -8,6 +8,7 @@ import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
 import Button from '@/components/Button.tsx';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const { emojis } = data;
@@ -49,6 +50,9 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
 
   return (
     <Nav isVisible={isVisible}>
+      <Button>
+        <LanguageSwitcher />
+      </Button>
       <Button onClick={handleCount}>
         <Heart fill="#e88ca6" />
         {count || ''}
