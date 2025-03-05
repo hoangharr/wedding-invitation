@@ -65,10 +65,10 @@
     }
   ],
   "mapInfo": {
-    "address1": "15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho",
-    "address2": "1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong",
+    "address1": "1B Thien Loi, Dang Giang, Ngo Quyen, Hai Phong",
+    "address2": "15 Phan Chu Trinh, Gia Cam, Viet Tri, Phu Tho",
     "naverMap1": "https://maps.app.goo.gl/satecd94UvsEB673A",
-    "naverMap2": "https://maps.app.goo.gl/duCDjewn6vyC8feEA",
+    "naverMap2": "https://maps.app.goo.gl/zLNuMTKsxPH2RcEt7",
     "lat1": 20.830055107170995,
     "lon1": 106.69725040184687,
     "lat2": 21.323209373795528,
