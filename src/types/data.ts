@@ -1,54 +1,65 @@
 export interface IData {
   emojis: string[];
   greeting: IGreeting;
-  hostInfo: IHostInfo[];
-  locationInfo: ILocationInfo[];
+  hostInfo: IHostInfo;
+  locationInfo: ILocationInfo;
   mapInfo: IMapInfo;
+  comment: { [language: string]: string };
+  heading: IHeading;
 }
 
 export interface IGreeting {
-  mainImg: string;
-  title: string;
-  date: string;
-  message: string;
-  host: {
-    groom: {
-      name: string;
-      relation: string;
-      parents: Parent;
-    };
-    bride: {
-      name: string;
-      relation: string;
-      parents: Parent;
+  [language: string]: {
+    location: string;
+    content: string;
+    title: string;
+    message: string;
+    eventDetail: string;
+    eventDetail2: string;
+    host: {
+      groom: BrideAndGroom;
+      bride: BrideAndGroom;
     };
   };
-  eventDetail: string;
 }
+
 
 export interface BrideAndGroom {
   name: string;
   relation: string;
-  parents: Parent;
+  parents: Parent[];
 }
 
-type Parent = { relation: string; isDeceased?: boolean; name: string }[];
+export interface Parent {
+  relation: string;
+  name: string;
+}
 
 export interface IHostInfo {
-  host: string;
-  accountInfo: { name: string; relation: string; bank: string; account: string }[];
+  [language: string]: {
+    host: string;
+    accountInfo: { name: string; relation: string; bank: string; account: string }[];
+  }[];
 }
 
 export interface IMapInfo {
-  address1: string;
-  address2: string;
-  naverMap: string;
-  kakaoMap: string;
-  lat: number;
-  lon: number;
+  [language: string]: {
+    address1: string;
+    address2: string;
+    address3: string;
+    address4: string;
+  };
 }
 
 export interface ILocationInfo {
-  title: string;
-  desc: string;
+  [language: string]: { title: string; desc: string }[];
+}
+export interface IHeading {
+  [language: string]: {
+    heading1: string;
+    heading2: string;
+    heading3: string;
+    heading4: string;
+    heading5: string;
+  };
 }
