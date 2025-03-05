@@ -6,7 +6,7 @@ import { IData } from '@/types/data.ts';
 
 const Main = () => {
   const {language} = useLanguage()
-  const greeting = data.greeting[language as 'en' | 'vi'];
+  const greeting = (data as IData).greeting[language as 'en' | 'vi'];
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
