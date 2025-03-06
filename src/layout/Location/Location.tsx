@@ -13,9 +13,9 @@ const Location = () => {
   const mapInfo = (data as IData).mapInfo[language as 'en' | 'vi'];
   return (
     <LocationWrapper>
-      <Caption textAlign={'center'}>{mapInfo.address1}</Caption>
+      {/* <Caption textAlign={'center'}>{mapInfo.address1}</Caption> */}
       <MapButtons role="groom" location="address1" />
-      <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
+      {/* <Caption textAlign={'center'}>{mapInfo.address2}</Caption> */}
       <MapButtons role="bride" location="address2" />
       <Map center={[21.0285, 105.8542]} zoom={13} />
       <Address />
