@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
-import data from 'data.json';
+// import data from 'data.json';
 import Address from './Address.tsx';
 import Map from './Map.tsx';
 import MapButtons from './MapButtons.tsx';
 // import { Caption } from '@/components/Text.tsx';
-import { IData } from '@/types/data.ts';
+// import { IData } from '@/types/data.ts';
 import { useLanguage } from 'context/LanguageContext';
 
 const Location = () => {
-  const { language } = useLanguage();
+  // const { language } = useLanguage();
 
   // const mapInfo = (data as IData).mapInfo[language as 'en' | 'vi'];
   return (
