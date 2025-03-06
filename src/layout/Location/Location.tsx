@@ -5,7 +5,7 @@ import Map from './Map.tsx';
 import MapButtons from './MapButtons.tsx';
 // import { Caption } from '@/components/Text.tsx';
 // import { IData } from '@/types/data.ts';
-import { useLanguage } from 'context/LanguageContext';
+// import { useLanguage } from 'context/LanguageContext';
 
 const Location = () => {
   // const { language } = useLanguage();
