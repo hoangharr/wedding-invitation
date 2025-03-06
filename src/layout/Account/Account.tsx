@@ -7,6 +7,15 @@ import { useLanguage } from 'context/LanguageContext';
 const Account = () => {
   const { language } = useLanguage(); // Get selected language
   const hostInfo = data.hostInfo[language as 'en' | 'vi']; // Use selected language data
+  const handleImageDownload = (imageUrl: string) => {
+    const filename = imageUrl.split('/').pop(); // Get filename from URL
+    const link = document.createElement('a');
+    link.href = imageUrl;
+    link.download = filename || 'downloaded_image.png'; // Provide a default filename if 'filename' is undefined
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <HostInfoWrapper>
@@ -31,6 +40,12 @@ const Account = () => {
                 <img
                   src={account.relation == 'Bride' ? '/bride qr.png' : '/groom qr.png'}
                   alt="qr"
+                  onClick={() =>
+                    handleImageDownload(
+                      account.relation === 'Bride' ? '/bride qr.png' : '/groom qr.png',
+                    )
+                  }
+                  style={{ cursor: 'pointer' }}
                 />
               </div>
             </>
